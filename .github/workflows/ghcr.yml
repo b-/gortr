@@ -40,3 +40,4 @@ jobs:
           #tags: ${{ steps.meta.outputs.tags }}
           tags: v0.15-bri
           labels: ${{ steps.meta.outputs.labels }}
+          file: {context}/Dockerfile.gortr
