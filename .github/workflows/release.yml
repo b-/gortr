@@ -49,10 +49,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: master
-        release_name: master
+        tag_name: v0.15_bri
+        release_name: v0.15_bri
         draft: false
-        prerelease: true
+        prerelease: false
         
     - name: Upload Release Asset
       uses: actions/github-script@v2
