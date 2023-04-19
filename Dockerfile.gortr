@@ -26,4 +26,4 @@ USER rtr
 
 COPY --from=builder ${src_dir}/gortr ${src_dir}/cmd/gortr/cf.pub /
 COPY --from=keygen /private.pem /private.pem
-ENTRYPOINT ["./gortr"]
+ENTRYPOINT ["./gortr.sh"]
